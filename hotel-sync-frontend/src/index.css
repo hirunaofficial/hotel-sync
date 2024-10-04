@@ -1,18 +1,17 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: 'Poppins', sans-serif; /* Main font family */
+  line-height: 1.5; /* Line height for readability */
+  font-weight: 400; /* Normal font weight */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light dark; /* Define light and dark modes */
+  color: rgba(255, 255, 255, 0.87); /* Default text color */
+  background-color: #242424; /* Background color for the body */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none; /* Disable font synthesis for better rendering */
+  text-rendering: optimizeLegibility; /* Improve text rendering for legibility */
+  -webkit-font-smoothing: antialiased; /* Smoothing for WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smoothing for macOS browsers */
 }
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -66,3 +65,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* src/index.css */
+body {
+  background-color: #f4f4f9;
+  color:#747bff;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.MuiPaper-root {
+  border-radius: 8px;
+}
+
+.MuiTypography-h4 {
+  font-weight: 700;
+}
+
+   
