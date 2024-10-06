@@ -57,7 +57,7 @@ const Sidebar = () => {
       icon: <FaFileInvoice />,
       hasSubMenu: true,
       subItems: [
-        { text: 'Payment History', link: '/payments' },
+        { text: 'Payment Method', link: '/payments' },
         { text: 'Add Payment', link: '/payments/add' },
         { text: 'Invoice', link: '/payments/invoice' },
       ],
