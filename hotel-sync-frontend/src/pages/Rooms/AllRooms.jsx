@@ -80,8 +80,8 @@ const AllRooms = () => {
   );
 
   return (
-    <Box sx={{ padding: 3 }}>
-      <Typography variant="h4" gutterBottom>
+    <Box sx={{ padding: 10 }}>
+      <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', color: '#3f51b5' }}>
         All Rooms
       </Typography>
 
@@ -181,7 +181,7 @@ const AllRooms = () => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Room Name</TableCell>
+              <TableCell>Room Name</TableCell><td></td>
               <TableCell>Description</TableCell>
               <TableCell>Price</TableCell>
               <TableCell>AC Status</TableCell>
@@ -208,7 +208,7 @@ const AllRooms = () => {
                   />
                 </TableCell>
                 <TableCell>
-                  <Button variant="contained" color="primary" disabled={room.status === 'Unavailable'}>
+                  <Button variant="contained" color="primary" size='small' disabled={room.status === 'Unavailable'}>
                     Book Now
                   </Button>
                 </TableCell>

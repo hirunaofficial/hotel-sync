@@ -29,7 +29,7 @@ const AllBookings = () => {
   ];
 
   return (
-    <Box sx={{ padding: 3 }}>
+    <Box sx={{ padding: 10 }}>
       <Grid container justifyContent="space-between" alignItems="center">
         <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', color: '#3f51b5' }}>
           All Bookings

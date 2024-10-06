@@ -15,6 +15,7 @@ import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound'; // Import the Not Found component
 import { Box } from '@mui/material';
 
+
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true); // Initialize state for sidebar
 

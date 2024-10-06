@@ -40,7 +40,7 @@ const EditBooking = () => {
   };
 
   return (
-    <Box sx={{ padding: 3 }}>
+    <Box sx={{ padding: 10 }}>
       <IconButton color="primary" onClick={() => window.history.back()} sx={{ marginBottom: 2 }}>
         <ArrowBackIcon />
       </IconButton>

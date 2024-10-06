@@ -34,8 +34,8 @@ const Customers = () => {
   );
 
   return (
-    <Box sx={{ padding: 3 }}>
-      <Typography variant="h4" gutterBottom>
+    <Box sx={{ padding: 10 }}>
+      <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', color: '#3f51b5' }}>
         Customer Management
       </Typography>
 

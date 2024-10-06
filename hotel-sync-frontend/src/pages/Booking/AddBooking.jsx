@@ -23,20 +23,18 @@ const AddBooking = () => {
   };
 
   return (
-    <Box
-      sx={{
-        maxWidth: 600,
-        mx: 'auto',
-        mt: 5,
-        padding: 2,
-        borderRadius: 2,
-        boxShadow: 3,
-      }}
-    >
-      <Paper elevation={3} sx={{ padding: 2 }}>
-        <Typography variant="h5" gutterBottom>
-          Add Booking
+    <Box sx={{  maxWidth: 1000,
+      mx: 'auto',
+      mt: 5,
+      padding: 2,
+      
+}}>
+      <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', color: '#3f51b5' }}>
+          Add Bookings
         </Typography>
+        
+       
+        <Paper elevation={3} sx={{ padding: 5 }}>
         <form onSubmit={handleSubmit}>
           <TextField
             fullWidth
@@ -95,7 +93,7 @@ const AddBooking = () => {
             Add Booking
           </Button>
         </form>
-      </Paper>
+        </Paper>
     </Box>
   );
 };
