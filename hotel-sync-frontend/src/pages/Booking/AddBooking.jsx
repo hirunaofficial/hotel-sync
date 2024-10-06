@@ -10,6 +10,7 @@ const AddBooking = () => {
     checkOutDate: '',
     paymentStatus: '',
   });
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
