@@ -10,6 +10,7 @@ import Customers from './pages/Customers';
 import Support from './pages/Support';
 import Settings from './pages/Settings';
 import PaymentMethods from './pages/Payment/PaymentMethods';
+import BookingReports from './pages/Reports/BookingReports';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Dashboard from './pages/Dashboard';
@@ -43,6 +44,7 @@ const App = () => {
               <Route path="/support" element={<Support />} />
               <Route path="/settings" element={<Settings />} />
               <Route path='/payments' element={<PaymentMethods/>}/>
+              <Route path='/reports/rooms' element={<BookingReports/>}/>
               <Route path="*" element={<NotFound />} /> {/* Catch-all for undefined routes */}
             </Routes>
           </Box>
