@@ -10,12 +10,12 @@ const StockReport = () => {
   ];
 
   return (
-    <Box sx={{ padding: 10 }}>
-      <Typography variant="h4" gutterBottomsx={{ fontWeight: 'bold', color: '#3f51b5' }}>
+    <Box sx={{ padding: 5 }}>
+      <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#3f51b5', marginBottom: 4 }}>
         Stock Report
       </Typography>
 
-      <Card sx={{ marginBottom: 3 }}>
+      <Card sx={{ marginBottom: 4 }}>
         <CardContent>
           <Typography variant="h6" gutterBottom>
             Summary
@@ -26,22 +26,22 @@ const StockReport = () => {
       </Card>
 
       <TableContainer component={Paper}>
-        <Table>
+        <Table sx={{ minWidth: 650 }}>
           <TableHead>
             <TableRow>
-              <TableCell>Item</TableCell>
-              <TableCell>Category</TableCell>
-              <TableCell>Available Stock</TableCell>
-              <TableCell>Price (per item)</TableCell>
+              <TableCell sx={{ fontWeight: 'bold', fontSize: '16px' }}>Item</TableCell>
+              <TableCell sx={{ fontWeight: 'bold', fontSize: '16px' }}>Category</TableCell>
+              <TableCell sx={{ fontWeight: 'bold', fontSize: '16px' }}>Available Stock</TableCell>
+              <TableCell sx={{ fontWeight: 'bold', fontSize: '16px' }}>Price (per item)</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {stocks.map((stock) => (
               <TableRow key={stock.id}>
-                <TableCell>{stock.item}</TableCell>
-                <TableCell>{stock.category}</TableCell>
-                <TableCell>{stock.availableStock}</TableCell>
-                <TableCell>${stock.price}</TableCell>
+                <TableCell sx={{ padding: 2 }}>{stock.item}</TableCell>
+                <TableCell sx={{ padding: 2 }}>{stock.category}</TableCell>
+                <TableCell sx={{ padding: 2 }}>{stock.availableStock}</TableCell>
+                <TableCell sx={{ padding: 2 }}>${stock.price}</TableCell>
               </TableRow>
             ))}
           </TableBody>
